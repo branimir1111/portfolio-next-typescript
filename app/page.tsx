@@ -8,6 +8,7 @@ const Home = () => {
     <main className="dark:bg-black-100">
       <MainNavbar />
       <Hero />
+      <div className="w-full min-h-screen">about section</div>
     </main>
   );
 };
