@@ -2,13 +2,20 @@
 
 import MainNavbar from '@/components/MainNavbar/MainNavbar';
 import Hero from '@/components/Hero/Hero';
+import About from '@/components/About/About';
+import Projects from '@/components/Projects/Projects';
+import Contact from '@/components/Contact/Contact';
 
 const Home = () => {
   return (
-    <main className="dark:bg-black-100">
+    <main>
       <MainNavbar />
-      <Hero />
-      <div className="w-full min-h-screen">about section</div>
+      <div className="relative dark:bg-black-100">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </main>
   );
 };

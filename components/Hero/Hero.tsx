@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <>
+    <section id="home">
       <HeroHighlight containerClassName="min-h-screen dark:bg-black-100">
         <motion.h1
           initial={{
@@ -33,7 +33,7 @@ const Hero = () => {
             </p>
           </div>
           Developing Ideas Into Harmonious{' '}
-          <Highlight className="text-black dark:text-white">
+          <Highlight className="text-black dark:text-white text-nowrap">
             User Interface
           </Highlight>
           <p className="mt-8 text-center md:tracking-wider text-sm md:text-lg lg:text-2xl">
@@ -48,7 +48,7 @@ const Hero = () => {
           </a>
         </motion.h1>
       </HeroHighlight>
-    </>
+    </section>
   );
 };
 export default Hero;
