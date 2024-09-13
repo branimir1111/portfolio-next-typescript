@@ -1,6 +1,6 @@
 const Projects = () => {
   return (
-    <section id="projects" className="w-full min-h-screen text-center">
+    <section id="projects" className="w-full pt-24 min-h-screen text-center">
       Projects section
     </section>
   );

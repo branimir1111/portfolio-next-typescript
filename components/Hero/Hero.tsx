@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section id="home">
-      <HeroHighlight containerClassName="min-h-screen dark:bg-black-100">
+      <HeroHighlight containerClassName="dark:bg-black-100">
         <motion.h1
           initial={{
             opacity: 0,
@@ -33,7 +33,7 @@ const Hero = () => {
             </p>
           </div>
           Developing Ideas Into Harmonious{' '}
-          <Highlight className="text-black dark:text-white text-nowrap">
+          <Highlight className="text-black dark:text-white text-nowrap px-3">
             User Interface
           </Highlight>
           <p className="mt-8 text-center md:tracking-wider text-sm md:text-lg lg:text-2xl">
