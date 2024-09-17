@@ -60,10 +60,53 @@ type DevToolsProps = {
 export const frontTools: DevToolsProps[] = [
   { id: 1, text: 'JavaScript' },
   { id: 2, text: 'TypeScript' },
-  { id: 2, text: 'React' },
+  { id: 3, text: 'React' },
 ];
 export const backTools: DevToolsProps[] = [
   { id: 1, text: 'NodeJS' },
   { id: 2, text: 'ExpressJS' },
-  { id: 2, text: 'MongoDB' },
+  { id: 3, text: 'MongoDB' },
+];
+
+type TestimonialsProps = {
+  readonly id: number;
+  quote: string;
+  name: string;
+  title: string;
+};
+
+export const testimonials: TestimonialsProps[] = [
+  {
+    id: 1,
+    quote: 'Innovation distinguishes between a leader and a follower.',
+    name: 'Steve Jobs',
+    title: 'Apple',
+  },
+  {
+    id: 2,
+    quote: 'The biggest risk is not taking any risk.',
+    name: 'Mark Zuckerberg',
+    title: 'Facebook/Meta',
+  },
+  {
+    id: 3,
+    quote:
+      "It's fine to celebrate success, but it is more important to heed the lessons of failure.",
+    name: 'Bill Gates',
+    title: 'Microsoft',
+  },
+  {
+    id: 4,
+    quote:
+      'I think it is possible for ordinary people to choose to be extraordinary.',
+    name: 'Elon Musk',
+    title: 'Tesla, SpaceX, X',
+  },
+  {
+    id: 5,
+    quote:
+      'If you do build a great experience, customers tell each other about that. Word of mouth is very powerful.',
+    name: 'Jeff Bezos',
+    title: 'Amazon',
+  },
 ];
