@@ -31,7 +31,7 @@ const MainNavbar = () => {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56 bg-slate-900 pl-2">
-            <DropdownMenuLabel className="text-violet-500">
+            <DropdownMenuLabel className="text-slate-500">
               Main Links
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
@@ -43,8 +43,8 @@ const MainNavbar = () => {
                   <DropdownMenuItem key={id} asChild>
                     <Link
                       href={path}
-                      className={`text-white ${
-                        isActive ? 'text-[#f97c16] translate-x-1' : ''
+                      className={`text-violet-400 ${
+                        isActive ? 'text-white translate-x-1' : ''
                       } font-semibold`}
                       onClick={() => setActiveLink(text)}
                     >
@@ -60,7 +60,7 @@ const MainNavbar = () => {
               })}
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuLabel className="text-violet-500">
+            <DropdownMenuLabel className="text-slate-500">
               My Social Media
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
@@ -68,7 +68,7 @@ const MainNavbar = () => {
               <Link
                 href="https://www.linkedin.com/in/branimirdjordjevic82/"
                 target="_blank"
-                className="flex items-center justify-between"
+                className="flex items-center justify-between text-slate-200"
               >
                 LinkedIn
                 <FaLinkedin />
@@ -78,7 +78,7 @@ const MainNavbar = () => {
               <Link
                 href="https://github.com/branimir1111"
                 target="_blank"
-                className="flex items-center justify-between"
+                className="flex items-center justify-between text-slate-200"
               >
                 GitHub
                 <FaGithub />
@@ -88,7 +88,7 @@ const MainNavbar = () => {
               <Link
                 href="https://www.facebook.com/profile.php?id=100013754237181"
                 target="_blank"
-                className="flex items-center justify-between"
+                className="flex items-center justify-between text-slate-200"
               >
                 Facebook
                 <FaFacebook />
@@ -98,7 +98,7 @@ const MainNavbar = () => {
               <Link
                 href="https://x.com/branimir1111"
                 target="_blank"
-                className="flex items-center justify-between"
+                className="flex items-center justify-between text-slate-200"
               >
                 X
                 <FaXTwitter />
@@ -116,9 +116,11 @@ const MainNavbar = () => {
               <Link
                 key={id}
                 href={path}
-                className={`text-white ${
-                  isActive ? 'text-[#f97c16]' : ''
-                } font-semibold hover:text-[#f99e16]`}
+                className={`text-violet-400 border-b-2 border-b-transparent ${
+                  isActive
+                    ? 'text-white border-b-white'
+                    : 'hover:text-violet-300'
+                } font-semibold `}
                 onClick={() => setActiveLink(text)}
               >
                 {text}
