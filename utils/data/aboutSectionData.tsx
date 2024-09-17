@@ -51,3 +51,19 @@ export const aboutSectionData: AboutSectionDataProps[] = [
     description: '',
   },
 ];
+
+type DevToolsProps = {
+  readonly id: number;
+  text: string;
+};
+
+export const frontTools: DevToolsProps[] = [
+  { id: 1, text: 'JavaScript' },
+  { id: 2, text: 'TypeScript' },
+  { id: 2, text: 'React' },
+];
+export const backTools: DevToolsProps[] = [
+  { id: 1, text: 'NodeJS' },
+  { id: 2, text: 'ExpressJS' },
+  { id: 2, text: 'MongoDB' },
+];
