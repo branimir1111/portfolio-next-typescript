@@ -9,7 +9,8 @@ export const aboutSectionData: AboutSectionDataProps[] = [
     id: 1,
     title:
       'Building strong client relationships through open communication is my priority',
-    description: '',
+    description:
+      'Prioritizing client needs by emphasizing clarity and trust in every interaction',
   },
   {
     id: 2,
@@ -29,17 +30,24 @@ export const aboutSectionData: AboutSectionDataProps[] = [
   {
     id: 5,
     title:
-      'A development-oriented technologist with professional focus on technological advancements',
+      'Continuously seeking to integrate the latest technological advancements into practical solutions',
     description: '',
   },
   {
     id: 6,
-    title: 'How about we start project as a team?',
-    description: '',
+    title: 'Currently working on a project management system',
+    description: 'The inside update',
   },
   {
     id: 7,
-    title: 'Currently working on a project management system',
-    description: 'The inside update',
+    title:
+      'Innovating solutions to drive success and exceed client expectations',
+    description:
+      'Leveraging cutting-edge technologies to provide customized solutions that help clients achieve their goals and surpass industry benchmarks',
+  },
+  {
+    id: 8,
+    title: 'How about we start project as a team?',
+    description: '',
   },
 ];
