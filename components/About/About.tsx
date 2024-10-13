@@ -12,7 +12,7 @@ const About = () => {
       <div className="w-full rounded-md flex flex-col antialiased dark:bg-black-100 items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
-          direction="right"
+          direction="left"
           speed="slow"
           pauseOnHover={false}
         />
