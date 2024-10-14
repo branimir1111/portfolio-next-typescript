@@ -24,7 +24,7 @@ export const aboutSectionData: AboutSectionDataProps[] = [
   },
   {
     id: 4,
-    title: "Let's connect no matter where you are in the world",
+    title: 'Additional tools',
     description: '',
   },
   {
@@ -40,11 +40,16 @@ export const aboutSectionData: AboutSectionDataProps[] = [
   },
   {
     id: 7,
-    title:
-      'Innovating solutions to drive success and exceed client expectations',
-    description:
-      'Leveraging cutting-edge technologies to provide customized solutions that help clients achieve their goals and surpass industry benchmarks',
+    title: "Let's connect no matter where you are in the world",
+    description: '',
   },
+  // {
+  //   id: 7,
+  //   title:
+  //     'Innovating solutions to drive success and exceed client expectations',
+  //   description:
+  //     'Leveraging cutting-edge technologies to provide customized solutions that help clients achieve their goals and surpass industry benchmarks',
+  // },
   {
     id: 8,
     title: 'How about we start project as a team?',
@@ -66,6 +71,46 @@ export const backTools: DevToolsProps[] = [
   { id: 1, text: 'NodeJS' },
   { id: 2, text: 'ExpressJS' },
   { id: 3, text: 'MongoDB' },
+];
+
+type AdditionalToolsProps = {
+  id: number;
+  text: string;
+};
+
+export const additionalTools: AdditionalToolsProps[] = [
+  {
+    id: 1,
+    text: 'Git',
+  },
+  {
+    id: 2,
+    text: 'Axios',
+  },
+  {
+    id: 3,
+    text: 'React Router',
+  },
+  {
+    id: 4,
+    text: 'Redux',
+  },
+  {
+    id: 5,
+    text: 'TanStack Query',
+  },
+  {
+    id: 6,
+    text: 'shadcn/ui',
+  },
+  {
+    id: 7,
+    text: 'React Hook Form',
+  },
+  {
+    id: 8,
+    text: 'Zod',
+  },
 ];
 
 type TestimonialsProps = {

@@ -9,14 +9,14 @@ const About = () => {
       id="about"
       className="w-full grid place-items-center px-3 break5:px-5"
     >
-      <div className="w-full rounded-md flex flex-col antialiased dark:bg-black-100 items-center justify-center relative overflow-hidden">
+      {/* <div className="w-full rounded-md flex flex-col antialiased dark:bg-black-100 items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="left"
           speed="slow"
           pauseOnHover={false}
         />
-      </div>
+      </div> */}
       <BentoGrid className="w-full">
         {aboutSectionData.map((aboutData) => {
           const { id, title, description } = aboutData;

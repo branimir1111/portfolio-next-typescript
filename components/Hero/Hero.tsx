@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section id="home">
       <HeroHighlight containerClassName="dark:bg-black-100">
-        <motion.h1
+        {/* <motion.h1
           initial={{
             opacity: 0,
             y: 20,
@@ -21,7 +21,8 @@ const Hero = () => {
             ease: [0.4, 0.0, 0.2, 1],
           }}
           className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
-        >
+        > */}
+        <h1 className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto ">
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center mb-8 sm:items-end">
             <Image
               src={profileImage}
@@ -46,7 +47,8 @@ const Hero = () => {
           >
             Download CV
           </a>
-        </motion.h1>
+        </h1>
+        {/* </motion.h1> */}
       </HeroHighlight>
     </section>
   );
