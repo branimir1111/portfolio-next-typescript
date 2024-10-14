@@ -5,46 +5,66 @@ import early2023Pic1 from '@/public/projectImages/early2023/picture1.png';
 import early2023Pic2 from '@/public/projectImages/early2023/picture2.png';
 import early2023Pic3 from '@/public/projectImages/early2023/picture3.png';
 import early2023Pic4 from '@/public/projectImages/early2023/picture4.png';
+import early2024Pic1 from '@/public/projectImages/early2024/picture1.png';
+import early2024Pic2 from '@/public/projectImages/early2024/picture2.png';
+import early2024Pic3 from '@/public/projectImages/early2024/picture3.png';
+import early2024Pic4 from '@/public/projectImages/early2024/picture4.png';
+import early2024Pic5 from '@/public/projectImages/early2024/picture5.png';
+import early2024Pic6 from '@/public/projectImages/early2024/picture6.png';
 
 const Projects = () => {
   const data = [
     {
-      title: '2024',
+      title: 'Early 2024',
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
-          {/* <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
+              src={early2024Pic1}
+              alt="picture1"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic"
             />
             <Image
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
+              src={early2024Pic2}
+              alt="picture2"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic"
             />
             <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
+              src={early2024Pic3}
+              alt="picture3"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic border"
             />
             <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
+              src={early2024Pic4}
+              alt="picture4"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic border"
             />
-          </div> */}
+            <Image
+              src={early2024Pic5}
+              alt="picture5"
+              width={500}
+              height={500}
+              className="projectPic border"
+            />
+            <Image
+              src={early2024Pic6}
+              alt="picture6"
+              width={500}
+              height={500}
+              className="projectPic border"
+            />
+          </div>
         </div>
       ),
     },
@@ -66,28 +86,28 @@ const Projects = () => {
               alt="picture1"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic"
             />
             <Image
               src={early2023Pic2}
               alt="picture2"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic"
             />
             <Image
               src={early2023Pic3}
               alt="picture3"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic"
             />
             <Image
               src={early2023Pic4}
               alt="picture4"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="projectPic"
             />
           </div>
         </div>
