@@ -4,6 +4,7 @@ import MainNavbar from '@/components/MainNavbar/MainNavbar';
 import Hero from '@/components/Hero/Hero';
 import About from '@/components/About/About';
 import Projects from '@/components/Projects/Projects';
+import Approach from '@/components/Approach/Approach';
 import Contact from '@/components/Contact/Contact';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <Hero />
         <About />
         <Projects />
+        <Approach />
         <Contact />
       </div>
     </main>
