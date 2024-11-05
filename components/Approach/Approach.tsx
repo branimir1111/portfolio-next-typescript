@@ -6,18 +6,31 @@ import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect';
 
 const Approach = () => {
   return (
-    <>
+    <div className="w-full grid justify-center">
+      <div className="w-full max-w-7xl pt-20 px-4 md:px-8 lg:px-10 grid place-items-center">
+        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl text-center">
+          My Aproach
+        </h2>
+      </div>
       <div className="w-full max-w-[1280px] py-20 flex flex-col lg:flex-row items-center justify-center dark:bg-black-100 gap-4 mx-auto px-8">
-        <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
+        <Card
+          title="Focus on Precision and User Experience"
+          icon={<AceternityIcon />}
+          des="I approach web development with precision and a strong focus on user experience. Every project starts with a detailed analysis of requirements to align with client needs. I prioritize clean, scalable code, ensuring that applications are robust and maintainable. Utilizing tools like react-hook-form and Redux, I optimize performance and streamline data handling. My ultimate goal is to deliver intuitive, high-quality solutions that meet both user and client expectations."
+        >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon />}>
+        <Card
+          title="Emphasis on Efficiency and Adaptability"
+          icon={<AceternityIcon />}
+          des="My web development process is grounded in efficiency and adaptability. I begin by setting clear goals to streamline workflows and focus on delivering core functionality first. Using tools like my own AntEater project management system, I keep tasks organized and maintain flexibility for changes. I rely on frameworks like React and TypeScript for consistent, reliable code. My approach balances speed and quality, aiming to create scalable applications that enhance user experience."
+        >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
+            containerClassName="bg-black-100"
             colors={[
               [236, 72, 153],
               [232, 121, 249],
@@ -27,7 +40,11 @@ const Approach = () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black-100/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon />}>
+        <Card
+          title="Collaborative and Solution-Oriented"
+          icon={<AceternityIcon />}
+          des="I take a collaborative and solution-oriented approach to web development. Clear communication with clients and team members ensures alignment on project goals and expectations. Leveraging technologies like ShadCN UI and Axios, I focus on efficient data handling and creating smooth frontend experiences. I use Redux and ReactQuery to manage state effectively, building responsive and user-friendly applications. My priority is to deliver reliable, performance-optimized solutions that meet client needs."
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -35,7 +52,7 @@ const Approach = () => {
           />
         </Card>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -43,10 +60,12 @@ const Card = ({
   title,
   icon,
   children,
+  des,
 }: {
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
+  des: string;
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
@@ -73,12 +92,20 @@ const Card = ({
       </AnimatePresence>
 
       <div className="relative z-20">
-        <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
+        <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full mx-auto flex items-center justify-center absolute">
           {icon}
         </div>
-        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="dark:text-white text-xl text-center opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
+        <p
+          className="text-sm opacity-0 group-hover/canvas-card:opacity-100
+         relative z-10 mt-4 group-hover/canvas-card:text-white text-center
+         group-hover/canvas-card:-translate-y-2 transition duration-200"
+          style={{ color: '#E4ECFF' }}
+        >
+          {des}
+        </p>
       </div>
     </div>
   );
